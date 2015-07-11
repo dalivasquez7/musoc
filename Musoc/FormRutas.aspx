@@ -17,40 +17,42 @@
             </nav>
         </div>
 
+       
+            <div class="grid">
+                 <fieldset class="fieldStilo">
+            <legend>Rutas y horarios</legend>
+                <table>
+                    <tr>
+                        <td class="tds">Origen:</td>
+                        <td class="tds">
+                            <select style="width: 150px" id="cbxOrigen" runat="server">
+                                <option value="San Jose">San Jose</option>
+                                <option value="San Isidro">San Isidro</option>
+                            </select>
+                            </td>
+                        <td class="tds">Destino:</td>
+                        <td class="tds">
+                            <select style="width: 150px" id="cbxDestino" runat="server">
+                                <option value="San Isidro">San Isidro</option>
+                                <option value="San Jose">San Jose</option>
+                            </select>
+                        </td>
+                        <td class="tds">
+                            <asp:Button Text="Buscar" class="btn btn-success" ID="btnBuscar" runat="server" OnClick="BotonBuscar_click" />
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <asp:GridView ID="GridRutas" class="Grid" runat="server">
+                                <SelectedRowStyle BackColor="#7BC143" />
+                            </asp:GridView>
 
-        <div class="grid">
-            <legend style="color: #7BC143">Rutas y horarios</legend>
-            <table>
-                <tr>
-                    <td>Origen:</td>
-                    <td>
-                        <select style="width: 150px" id="cbxOrigen" runat="server">
-                            <option value="San Jose">San Jose</option>
-                            <option value="San Isidro">San Isidro</option>
-                        </select>
-                    <td>Destino:</td>
-                    <td>
-                        <select style="width: 150px" id="cbxDestino" runat="server">
-                              <option value="San Isidro">San Isidro</option>
-                            <option value="San Jose">San Jose</option>
-                        </select>
-                    </td>
-                    <td>
-                        <asp:Button Text="Buscar" class="btn btn-success" ID="btnBuscar" runat="server" OnClick="BotonBuscar_click" />
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="grid">
-            <table>
-                <tr>
-                    <td>
-                        <asp:GridView ID="GridRutas" class="gridEstilo"  runat="server">
-                            <SelectedRowStyle BackColor="#7BC143" />
-                        </asp:GridView>
-
-            </table>
-        </div>
+                </table>
+                     </fieldset>
+            </div>
+        
 
 
     </form>

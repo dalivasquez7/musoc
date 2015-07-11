@@ -24,7 +24,6 @@ namespace Musoc
 
             try
             {
-
                 Object[] datos = new Object[6];
 
                 DataTable rutas = controlador.getRutas(cbxOrigen.Value, cbxDestino.Value);
@@ -44,7 +43,6 @@ namespace Musoc
                         tabla.Rows.Add(datos);
                         i++;
                     }
-
                 }
                 GridRutas.DataBind();
             }
@@ -52,8 +50,6 @@ namespace Musoc
             {
                 Debug.WriteLine("No se pudo cargar las reservaciones");
             }
-
-
         }
 
         protected String generarId()

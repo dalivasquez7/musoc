@@ -106,10 +106,54 @@ padding: 5px;
     margin-right:auto;
     padding-top: 15px;
 }
-.gridEstilo{
-       background : #ccc;
-       font-size: 18px;
-       text-align:center;
-       grid-column-sizing:minmax(8, 25)
 
+
+.fieldStilo{
+
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.tds {
+    height: 50px;
+    width: 100px;
+    vertical-align: bottom;
+    padding:initial;
+    text-align:center;
+    font-size:16px;
+    font-family:Lucida Sans;
+    color:darkblue;
+}
+
+legend{
+
+    font-size:medium;
+    font-family:'Lucida Sans';
+    color:chocolate;
+}
+
+.Grid {
+    background-color: #fff; 
+    margin: 5px 0 10px 0; 
+    border: solid 1px #525252; 
+    border-collapse:collapse; 
+    font-family:Lucida Sans; 
+    color: #474747;
+    text-align:center;
+    grid-column-sizing:minmax(8, 25);
+    font-size:14px;
+}
+
+.Grid th  {
+
+      padding : 4px 2px;
+      color: #fff;
+      background: #363670 url(Images/grid-header.png) repeat-x top;
+      border-left: solid 1px #525252;
+      font-size: 0.9em;
 }
