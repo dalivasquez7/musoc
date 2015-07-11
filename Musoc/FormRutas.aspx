@@ -18,7 +18,7 @@
         </div>
 
 
-        <div class="well bs-component">
+        <div class="grid">
             <legend style="color: #7BC143">Rutas y horarios</legend>
             <table>
                 <tr>
@@ -41,11 +41,11 @@
                 </tr>
             </table>
         </div>
-        <div class="well bs-component" style="background-color: white">
+        <div class="grid">
             <table>
                 <tr>
                     <td>
-                        <asp:GridView ID="GridRutas" class="Gridcontenedor" runat="server">
+                        <asp:GridView ID="GridRutas" class="gridEstilo"  runat="server">
                             <SelectedRowStyle BackColor="#7BC143" />
                         </asp:GridView>
 

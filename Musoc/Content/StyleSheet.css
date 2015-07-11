@@ -98,3 +98,18 @@ padding: 5px;
 .sub-menu li a:hover, .sub-menu .current-item a {
     background:#3e3436;
 }
+/**end*/
+
+.grid{
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 15px;
+}
+.gridEstilo{
+       background : #ccc;
+       font-size: 18px;
+       text-align:center;
+       grid-column-sizing:minmax(8, 25)
+
+}
