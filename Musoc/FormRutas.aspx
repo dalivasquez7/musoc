@@ -7,10 +7,14 @@
 
 <body>
     <form id="form1" runat="server">
+     
         <div class="menu-wrap">
+        <div class="logo">
+            <h1 class="logoFont">MUSOC</h1>
+    </div>
             <nav class="menu">
                 <ul class="clearfix">
-                    <li><a href="index.html">Inicio</a> </li>
+            <li><a href="Inicio.aspx">Inicio</a> </li>
                     <li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
                     <li><a href="FormCompras.aspx">Compra de boletos</a></li>
                 </ul>
@@ -18,9 +22,9 @@
         </div>
 
        
-            <div class="grid">
+        <div id="#section">
                  <fieldset class="fieldStilo">
-            <legend>Rutas y horarios</legend>
+                <legend>Rutas</legend>
                 <table>
                     <tr>
                         <td class="tds">Origen:</td>
@@ -48,7 +52,6 @@
                             <asp:GridView ID="GridRutas" class="Grid" runat="server">
                                 <SelectedRowStyle BackColor="#7BC143" />
                             </asp:GridView>
-
                 </table>
                      </fieldset>
             </div>

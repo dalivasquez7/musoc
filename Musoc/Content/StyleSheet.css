@@ -17,7 +17,7 @@ padding: 5px;
     width:100%;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
 	/*position: absolute;*/
-    background:#3e3436;
+    background:#660000;
 	display: inline-block;
 }
  
@@ -37,12 +37,12 @@ padding: 5px;
 .menu a {
 	text-decoration: none;
     transition:all linear 0.15s;
-    color:#919191;
+    color:white;
 }
  
 .menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
-    color:#be5b70;
+    color:white;
 }
 
 .menu .arrow {
@@ -105,18 +105,23 @@ padding: 5px;
     margin-left:auto;
     margin-right:auto;
     padding-top: 15px;
+    padding-bottom:0px;
 }
 
+#section {
+    width:350px;
+    float:left;
+    padding:35px;	 	 
+}
 
 .fieldStilo{
-
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 5px;
+    padding-left: 200px;
+    padding-right: 0px;
+    background-color: white;
 }
 
 .tds {
@@ -134,12 +139,12 @@ legend{
 
     font-size:medium;
     font-family:'Lucida Sans';
-    color:chocolate;
+    color:#191970;
 }
 
 .Grid {
     background-color: #fff; 
-    margin: 5px 0 10px 0; 
+    margin-left:70px; 
     border: solid 1px #525252; 
     border-collapse:collapse; 
     font-family:Lucida Sans; 
@@ -147,13 +152,14 @@ legend{
     text-align:center;
     grid-column-sizing:minmax(8, 25);
     font-size:14px;
+    margin-top: 15px;
 }
 
 .Grid th  {
 
-      padding : 4px 2px;
+      padding : 10px 15px;
       color: #fff;
-      background: #363670 url(Images/grid-header.png) repeat-x top;
+      background: #414429 url(Images/grid-header.png) repeat-x top;
       border-left: solid 1px #525252;
       font-size: 0.9em;
 }

@@ -7,19 +7,24 @@
 
 <body>
     <div class="menu-wrap">
-    <nav class="menu">
-        <ul class="clearfix">
-            <li><a href="index.html">Inicio</a> </li>
-			<li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
-            <li><a href="FormCompras.aspx">Compra de boletos</a></li>
-        </ul>
-    </nav>
-</div>
-     
+        <div class="logo">
+            <h1 class="logoFont">MUSOC</h1>
+        </div>
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a href="Inicio.aspx">Inicio</a> </li>
+                <li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
+                <li><a href="FormCompras.aspx">Compra de boletos</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <form id="form1" runat="server">
-        <div>
+        <div id="nav">
+            Infor musoc
         </div>
+        <div id="section">FOTO MUSOS</div>
+
     </form>
 </body>
 </html>
