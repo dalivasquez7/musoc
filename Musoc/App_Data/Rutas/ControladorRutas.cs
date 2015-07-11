@@ -17,9 +17,9 @@ namespace Musoc
             bd = new RutasBaseDatos();
         }
 
-        public DataTable getDestino()
+        public DataTable getRutas(String origen, String destino)
         {
-            DataTable dt = bd.getDestino();
+            DataTable dt = bd.getRuta(origen, destino);
             return dt;
         }
 

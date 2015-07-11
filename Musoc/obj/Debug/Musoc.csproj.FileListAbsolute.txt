@@ -16,3 +16,21 @@ F:\Documents\Visual Studio 2013\Projects\Musoc\Musoc\bin\Microsoft.ApplicationIn
 F:\Documents\Visual Studio 2013\Projects\Musoc\Musoc\obj\Debug\Musoc.csprojResolveAssemblyReference.cache
 F:\Documents\Visual Studio 2013\Projects\Musoc\Musoc\obj\Debug\Musoc.dll
 F:\Documents\Visual Studio 2013\Projects\Musoc\Musoc\obj\Debug\Musoc.pdb
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\obj\Debug\Musoc.csprojResolveAssemblyReference.cache
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\obj\Debug\Musoc.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Musoc.dll.config
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Musoc.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Musoc.pdb
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.xml
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.xml
+C:\Users\Dalila\Source\Repos\musoc3\Musoc\obj\Debug\Musoc.pdb

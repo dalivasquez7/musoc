@@ -21,14 +21,14 @@ namespace Musoc
 
         public void insertar()
         {
-            String consultaSQL = "insert into ruta values ('SJO', '11:00', 'San Jose', 'PZ', 'directo', 3540, 'lunes')";
+            String consultaSQL = "insert into ruta values()";
             adaptador.insertarConsulta(consultaSQL);
 
         }
-        internal DataTable getDestino()
+        internal DataTable getRuta(String origen, String destino)
         {
-            insertar();
-            String consultaSQL = "select destino from ruta";
+            
+            String consultaSQL = "select * from ruta where origen = '"+origen+"' and destino = '"+destino+"' order by num ";
             dt = adaptador.ejecutarConsultaTabla(consultaSQL);
             return dt;
         }
