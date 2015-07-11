@@ -79,6 +79,9 @@
   <ItemGroup>
     <Content Include="FormCompras.aspx" />
     <Content Include="FormRutas.aspx" />
+    <Content Include="Images\available_seat_img.gif" />
+    <Content Include="Images\booked_seat_img.gif" />
+    <Content Include="Images\selected_seat_img.gif" />
     <Content Include="Inicio.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
@@ -93,6 +96,8 @@
     <Content Include="scripts\ai.0.15.0-build32981.js" />
     <Content Include="scripts\ai.0.15.0-build32981.min.js" />
     <Content Include="Content\StyleSheet.css" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\script.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
