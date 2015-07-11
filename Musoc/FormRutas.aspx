@@ -10,7 +10,7 @@
         <div class="menu-wrap">
             <nav class="menu">
                 <ul class="clearfix">
-                    <li><a href="index.html">Inicio</a> </li>
+                    <li><a href="Inicio.aspx">Inicio</a> </li>
                     <li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
                     <li><a href="FormCompras.aspx">Compra de boletos</a></li>
                 </ul>
@@ -52,9 +52,6 @@
                 </table>
                      </fieldset>
             </div>
-        
-
-
     </form>
 </body>
 </html>
