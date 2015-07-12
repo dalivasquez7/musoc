@@ -85,7 +85,6 @@
     <Content Include="Inicio.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
-    <Content Include="FormFinCompra.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -105,6 +104,8 @@
     <Compile Include="App_Data\AdaptadorBD.cs" />
     <Compile Include="App_Data\Rutas\ControladorRutas.cs" />
     <Compile Include="App_Data\Rutas\EntidadRutas.cs" />
+    <Compile Include="App_Data\Compras\ControladorCompras.cs" />
+    <Compile Include="App_Data\Compras\ComprasBaseDatos.cs" />
     <Compile Include="FormCompras.aspx.cs">
       <DependentUpon>FormCompras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,13 +129,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App_Data\Rutas\RutasBaseDatos.cs" />
-    <Compile Include="FormFinCompra.aspx.cs">
-      <DependentUpon>FormFinCompra.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FormFinCompra.aspx.designer.cs">
-      <DependentUpon>FormFinCompra.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

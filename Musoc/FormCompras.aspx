@@ -42,13 +42,18 @@
                         </td>
                         <td class="tds">Día:</td>
                         <td class="tds">
-                             <input id="diaSeleccionado" type="date" runat="server" />
+                            <input id="diaSeleccionado" type="date" runat="server" autopostback="true" />
                         </td>
+                        <td id="tdBoton"></td>
+                        <td class="tds">
+                            <asp:Button Text="Horas Disponibles" class="btn btn-success" ID="btnFechas" runat="server" OnClick="clickAgregarHora" /></td>
+                    </tr>
+                    <tr>
                         <td class="tds">Hora:</td>
                         <td class="tds">
                             <asp:DropDownList ID="listHora" runat="server" AutoPostBack="true" OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
                         </td>
-         
+                    </tr>
                 </table>
             </fieldset>
         </div>
