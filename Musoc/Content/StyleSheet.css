@@ -138,7 +138,6 @@ padding: 5px;
 }
 
 legend{
-
     font-size:medium;
     font-family:'Lucida Sans';
     color:#191970;
@@ -158,7 +157,6 @@ legend{
 }
 
 .Grid th  {
-
       padding : 10px 15px;
       color: #fff;
       background: #414429 url(Images/grid-header.png) repeat-x top;
@@ -168,7 +166,6 @@ legend{
 
 
 .logo{
-
     background-color:#660000;
     border-bottom:double;
     border-bottom-color:#EAEAEA;
@@ -194,16 +191,15 @@ legend{
     background-color: blue; 
 }
 #section {
-   line-height: 30px;
-background-color: #EEE;
-height: 450px;
-width: 100px;
-float: left;
-padding: 5px;
-	 
+    line-height: 30px;
+    background-color: #EEE;
+    height: 450px;
+    width: 100px;
+    float: left;
+    padding: 5px; 
 }
 
-
+/**BUS**/
 #bus {    
 	height:200px;    
 	width:550px;
@@ -232,18 +228,18 @@ padding: 5px;
 }
 
 #lugar .asiento{
-	background:url("images/available_seat_img.gif") no-repeat scroll 0 0 transparent;
+	background:url("../images/available_seat_img.gif") no-repeat scroll 0 0 transparent;
 	height:33px;
 	width:33px;
-	display:block;   
+	display:inline-block;   
 }
 
 #lugar .AsientoSeleccionado{ 
-	background-image:url("images/booked_seat_img.gif");          
+	background-image:url("../images/booked_seat_img.gif");          
 }
 
 #lugar .EligiendoAsiento{ 
-	background-image:url("images/selected_seat_img.gif");        
+	background-image:url("../images/selected_seat_img.gif");        
 }
 
 #lugar .row-2, #lugar .row-3{
@@ -251,7 +247,7 @@ padding: 5px;
 }
 
 #DescripcionAsiento li{
-	verticle-align:middle;    
+	vertical-align:middle;    
 	list-style: none outside none;
 	padding-left:35px;
 	height:35px;
