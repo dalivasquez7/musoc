@@ -21,6 +21,11 @@ namespace Musoc
             String dia = diaSelec.ToString("dddd");
         }
 
+        protected void btnShowNew_click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormFinCompra");
+        }
+
         protected void clickMostrarAsientos(object sender, EventArgs e)
         {
             dias();
