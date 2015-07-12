@@ -40,15 +40,6 @@ namespace Musoc {
         protected global::System.Web.UI.HtmlControls.HtmlSelect cbxDestino;
         
         /// <summary>
-        /// cbxHora control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxHora;
-        
-        /// <summary>
         /// diaSeleccionado control.
         /// </summary>
         /// <remarks>
@@ -56,5 +47,14 @@ namespace Musoc {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl diaSeleccionado;
+        
+        /// <summary>
+        /// listHora control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList listHora;
     }
 }
