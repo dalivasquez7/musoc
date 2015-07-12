@@ -7,11 +7,11 @@
 
 <body>
     <form id="form1" runat="server">
-     
+
         <div class="menu-wrap">
-        <div class="logo">
-            <h1 class="logoFont">MUSOC</h1>
-    </div>
+            <div class="logo">
+                <h1 class="logoFont">MUSOC</h1>
+            </div>
             <nav class="menu">
                 <ul class="clearfix">
                     <li><a href="Inicio.aspx">Inicio</a> </li>
@@ -22,7 +22,7 @@
         </div>
 
         <div id="#section">
-                 <fieldset class="fieldStilo">
+            <fieldset class="fieldStilo">
                 <legend>Rutas</legend>
                 <table>
                     <tr>
@@ -32,7 +32,7 @@
                                 <option value="San Jose">San Jose</option>
                                 <option value="San Isidro">San Isidro</option>
                             </select>
-                            </td>
+                        </td>
                         <td class="tds">Destino:</td>
                         <td class="tds">
                             <select style="width: 150px" id="cbxDestino" runat="server">
@@ -52,9 +52,8 @@
                                 <SelectedRowStyle BackColor="#7BC143" />
                             </asp:GridView>
                 </table>
-                     </fieldset>
-            </div>
-
+            </fieldset>
+        </div>
     </form>
 </body>
 </html>

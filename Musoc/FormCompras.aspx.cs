@@ -13,5 +13,10 @@ namespace Musoc
         {
 
         }
+
+        protected void btnShowNew_click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormFinCompra");
+        }
     }
 }

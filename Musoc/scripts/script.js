@@ -30,11 +30,11 @@
     };
 
     //case I: Show from starting
-    //init();
+    init();
 
    // Case II: If already booked
-    var bookedSeats = [5, 10, 25];
-    init(bookedSeats);
+    //var bookedSeats = [5, 10, 25];
+    //init(bookedSeats);
 
 
     $('.' + settings.seatCss).click(function () {
@@ -52,8 +52,9 @@
             str.push($(this).attr('title'));
         });
         alert(str.join(','));
-    })
 
+    })
+    
     $('#btnShowNew').click(function () {
         var str = [], item;
         $.each($('#lugar li.' + settings.selectingSeatCss + ' a'), function (index, value) {
