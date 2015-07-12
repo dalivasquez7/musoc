@@ -49,6 +49,15 @@ namespace Musoc {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl diaSeleccionado;
         
         /// <summary>
+        /// btnFechas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFechas;
+        
+        /// <summary>
         /// listHora control.
         /// </summary>
         /// <remarks>
