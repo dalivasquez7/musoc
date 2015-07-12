@@ -18,7 +18,6 @@ namespace Musoc
         protected void dias()
         {
             DateTime diaSelec = DateTime.Parse(diaSeleccionado.Value);
-           // fecha = diaSelec.ToString("MM/dd/yyyy");
             String dia = diaSelec.ToString("dddd");
         }
 
