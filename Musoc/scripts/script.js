@@ -30,11 +30,11 @@
     };
 
     //case I: Show from starting
-    init();
+    //init();
 
-    //Case II: If already booked
-    //var bookedSeats = [5, 10, 25];
-    //init(bookedSeats);
+   // Case II: If already booked
+    var bookedSeats = [5, 10, 25];
+    init(bookedSeats);
 
 
     $('.' + settings.seatCss).click(function () {

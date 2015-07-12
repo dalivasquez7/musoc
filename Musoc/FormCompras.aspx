@@ -44,6 +44,10 @@
                         <td class="tds">
                             <select style="width: 150px" id="cbxHora" runat="server"></select>
                         </td>
+                        <td class="tds">Día:</td>
+                        <td class="tds">
+                             <input id="diaSeleccionado" type="date" runat="server" />
+                        </td>
                 </table>
             </fieldset>
         </div>
