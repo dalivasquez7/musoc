@@ -22,7 +22,7 @@
             </nav>
         </div>
         <div id="#section">
-            <fieldset class="fieldStilo">
+            <fieldset class="fieldBoleto">
                 <legend>Rutas</legend>
                 <table>
                     <tr>
@@ -40,14 +40,15 @@
                                 <option value="San Jose">San Jose</option>
                             </select>
                         </td>
-                        <td class="tds">Hora:</td>
-                        <td class="tds">
-                            <select style="width: 150px" id="cbxHora" runat="server"></select>
-                        </td>
                         <td class="tds">Día:</td>
                         <td class="tds">
                              <input id="diaSeleccionado" type="date" runat="server" />
                         </td>
+                        <td class="tds">Hora:</td>
+                        <td class="tds">
+                            <asp:DropDownList ID="listHora" runat="server" AutoPostBack="true" OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
+                        </td>
+         
                 </table>
             </fieldset>
         </div>

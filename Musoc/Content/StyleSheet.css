@@ -126,6 +126,17 @@ padding: 5px;
     background-color: white;
 }
 
+
+.fieldBoleto{
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 5px;
+    padding-left: 60px;
+    padding-right: 0px;
+    background-color: #FFF;
+}
+
 .tds {
     height: 50px;
     width: 100px;
