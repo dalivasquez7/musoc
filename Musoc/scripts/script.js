@@ -46,21 +46,24 @@
         }
     });
 
+    /*
     $('#btnShow').click(function () {
         var str = [];
         $.each($('#lugar li.' + settings.selectedSeatCss + ' a, #lugar li.' + settings.selectingSeatCss + ' a'), function (index, value) {
             str.push($(this).attr('title'));
         });
-        alert(str.join(','));
-
-    })
+        //alert(str.join(','));
+        window.open("FormFinCompra.aspx");
+    }) 
+    */
     
-    $('#btnShowNew').click(function () {
+    $('#btnComprar').click(function () {
         var str = [], item;
         $.each($('#lugar li.' + settings.selectingSeatCss + ' a'), function (index, value) {
             item = $(this).attr('title');
             str.push(item);
         });
         alert(str.join(','));
+        window.open("FormFinCompra.aspx");
     })
 });

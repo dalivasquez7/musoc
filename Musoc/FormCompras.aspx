@@ -71,8 +71,7 @@
                     </ul>
                 </div>
                 <div style="clear: both; width: 100%">
-                    <input type="button" id="btnShowNew" value="Mostrar Asientos Seleccionados"/>
-                    <input type="button" id="btnShow" value="Mostrar Todos" />
+                    <input type="button" id="btnComprar" value="Comprar"/>
                 </div>
             </fieldset>
         </div>
