@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="Content/StyleSheet.css" />
     <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -83,6 +84,7 @@
                         <asp:TextBox ID="txtNumAsiento" runat="server" ></asp:TextBox>
                     </p>
                 </div>
+
             </fieldset>
         </div>
     </form>

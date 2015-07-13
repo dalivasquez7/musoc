@@ -28,14 +28,14 @@ namespace Musoc
 
         internal DataTable horasSemana(String origen, String destino)// todos
         { 
-            String consultaSQL = "select hora from ruta where origen = '"+ origen +"' and destino = '"+ destino +"'  and diasDisponbiles <> 'Domingo' order by num";
+            String consultaSQL = "select hora from ruta where origen = '"+ origen +"' and destino = '"+ destino +"'  and diasDisponibles <> 'Domingo' order by num";
             dt = adaptador.ejecutarConsultaTabla(consultaSQL);
             return dt;
         }
 
         internal DataTable horasTodas() //incluye domingos
         {
-            String consultaSQL = "select hora from ruta where origen = 'San Isidro' and destino = 'San Jose'  and diasDisponbiles <> 'Lunes-Viernes' order by num";
+            String consultaSQL = "select hora from ruta where origen = 'San Isidro' and destino = 'San Jose'  and diasDisponibles <> 'Lunes-Viernes' order by num";
             dt = adaptador.ejecutarConsultaTabla(consultaSQL);
             return dt;
         }
