@@ -22,34 +22,41 @@ namespace Musoc
             if (!IsPostBack)
             {
                 BindSeats();
-            }   
-    
+            }
+
         }
 
         public void BindSeats()
         {
             ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
         }
- 
+
 
         protected String dias()
         {
             String dia;
             DateTime diaSelec = DateTime.Parse(diaSeleccionado.Value);
             return dia = diaSelec.ToString("dddd");
-            
+
         }
 
         protected void clickMostrarAsientos(object sender, EventArgs e)
         {
-            
+
 
         }
 
         protected void clickAgregarHora(object sender, EventArgs e)
         {
-            listHora.Items.Clear();
-            llenarHora();
+            try
+            {
+                listHora.Items.Clear();
+                llenarHora();
+            }
+            catch (Exception ee)
+            {
+                mostrarMensaje("danger", "Error:", "Seleccione una fecha");
+            }
 
 
         }
@@ -57,6 +64,8 @@ namespace Musoc
         protected void llenarHora()
         {
             String dia = dias();
+            DateTime horaActual = DateTime.Parse(DateTime.Now.ToString("h:mm:sstt"));
+            DateTime horasDisponibles;
             if (cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro") && ((dia.Equals("sábado") || dia.Equals("Saturday")) || (dia.Equals("domingo") || dia.Equals("Sunday"))))
             {
                 DataTable horas = controlador.horasFindeSemana(); //no incluye los horarios que son Lunes-Viernes
@@ -64,7 +73,19 @@ namespace Musoc
                 {
                     for (int i = 0; i < horas.Rows.Count; i++)
                     {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
+                        horasDisponibles = DateTime.Parse(horas.Rows[i][0].ToString());
+                        if (DateTime.Parse(diaSeleccionado.Value) > DateTime.Today)
+                        {
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
+                        else if (horasDisponibles > horaActual)
+                        {
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
+                        else if (DateTime.Parse(diaSeleccionado.Value) < DateTime.Today)
+                        {
+                            mostrarMensaje("danger", "Error:", "La fecha ya pasó");
+                        }
                     }
                 }
             }
@@ -75,19 +96,44 @@ namespace Musoc
                 {
                     for (int i = 0; i < horas.Rows.Count; i++)
                     {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
+                        horasDisponibles = DateTime.Parse(horas.Rows[i][0].ToString());
+                        if (DateTime.Parse(diaSeleccionado.Value) > DateTime.Today)
+                        {
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
+                        else if (horasDisponibles > horaActual)
+                        {
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
+                        else if (DateTime.Parse(diaSeleccionado.Value) < DateTime.Today)
+                        {
+                            mostrarMensaje("danger", "Error:", "La fecha ya pasó");
+                        }
+
                     }
                 }
             }
             else if ((cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro")) || (cbxOrigen.Value.Equals("San Isidro") && cbxDestino.Value.Equals("San Jose")))
             {
-                
+
                 DataTable horas = controlador.horasSemana(cbxOrigen.Value, cbxDestino.Value);  //todas las horas entre semana, no incluye domingos
                 if (horas.Rows.Count > 0)
                 {
                     for (int i = 0; i < horas.Rows.Count; i++)
                     {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
+                        horasDisponibles = DateTime.Parse(horas.Rows[i][0].ToString());
+                        if (DateTime.Parse(diaSeleccionado.Value) > DateTime.Today)
+                        {
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
+                        else if (horasDisponibles > horaActual)
+                        {
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
+                        else if (DateTime.Parse(diaSeleccionado.Value) < DateTime.Today)
+                        {
+                            mostrarMensaje("danger", "Error:", "La fecha ya pasó");
+                        }
                     }
                 }
             }
@@ -109,17 +155,33 @@ namespace Musoc
 
         }
 
+        protected void mostrarMensaje(String tipoAlerta, String alerta, String mensaje)
+        {
+            alertAlerta.Attributes["class"] = "alert alert-" + tipoAlerta + " alert-dismissable fade in";
+            labelTipoAlerta.Text = alerta + " ";
+            labelAlerta.Text = mensaje;
+            alertAlerta.Attributes.Remove("hidden");
+            this.SetFocus(alertAlerta);
+        }
+
         protected void BotonComprar_click(object sender, EventArgs e)
         {
             asignarValores();
-            asientos = txtNumAsiento.Text;
-            FormFinCompra.asientos = asientos;
-            FormFinCompra.codigo = codigo;
-            FormFinCompra.fecha = fecha;
-            FormFinCompra.hora = horaViaje;
-            Response.Redirect("~/FormFinCompra.aspx");
+            if (txtNumAsiento.Text == "")
+            {
+               // mostrarMensaje("danger", "Error:", "Seleccione almenos un asiento");
+            }
+            else
+            {
+                asientos = txtNumAsiento.Text;
+                FormFinCompra.asientos = asientos;
+                FormFinCompra.codigo = codigo;
+                FormFinCompra.fecha = fecha;
+                FormFinCompra.hora = horaViaje;
+                Response.Redirect("~/FormFinCompra.aspx");
+            }
         }
-        
+
 
 
     }

@@ -27,6 +27,15 @@
                 <legend>Rutas</legend>
                 <table>
                     <tr>
+                        <a href="">
+                            <div id="alertAlerta" class="alert alert-danger fade in"  runat="server" hidden="hidden">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <strong>
+                                    <asp:Label ID="labelTipoAlerta" runat="server" Text="Alerta! "></asp:Label></strong><asp:Label ID="labelAlerta" runat="server" Text="Mensaje de alerta"></asp:Label>
+                            </div>
+                        </a>
+                    </tr>
+                    <tr>
                         <td class="tds">Origen:</td>
                         <td class="tds">
                             <select style="width: 150px" id="cbxOrigen" runat="server">
@@ -58,7 +67,6 @@
                 </table>
             </fieldset>
         </div>
-
         <!--BUS-->
 
         <div id="#section">
@@ -82,7 +90,7 @@
             </fieldset>
         </div>
         <div>
-            <asp:Button Text=ComprarBoletos value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
+            <asp:Button Text="ComprarBoletos" value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
         </div>
     </form>
 </body>

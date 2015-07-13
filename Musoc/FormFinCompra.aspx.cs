@@ -19,5 +19,20 @@ namespace Musoc
         {
 
         }
+
+        protected void BotonFinCompra_click(object sender, EventArgs e)
+        {
+            int[] asiento = asientos.Split(',').Select(int.Parse).ToArray();
+            String fech = fecha.ToString("dd/MM/yyyy");
+
+            for (int i = 0; i < asiento.Length; i++)
+            {
+
+                controlador.finalizar(asiento[i], fech, "ocupado", codigo, hora);
+            }
+                
+
+        }
+        
     }
 }

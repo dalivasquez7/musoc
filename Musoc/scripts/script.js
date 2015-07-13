@@ -41,7 +41,7 @@
 
     $('.' + settings.seatCss).live('click', function () {
         if ($(this).hasClass(settings.selectedSeatCss)) {
-            alert('This seat is already reserved');
+            alert('Este asiento ya esta reservado');
         }
         else {
             $(this).toggleClass(settings.selectingSeatCss);
@@ -58,9 +58,6 @@
             $('#txtNumAsiento').val(str.join(','));
         //alert(str.join(','));
             //window.open("FormFinCompra.aspx");
-        }
-        else {
-            alert('Select atleast one seat');
         }
         
     }) 

@@ -104,7 +104,6 @@
   <ItemGroup>
     <Compile Include="App_Data\AdaptadorBD.cs" />
     <Compile Include="App_Data\Rutas\ControladorRutas.cs" />
-    <Compile Include="App_Data\Rutas\EntidadRutas.cs" />
     <Compile Include="App_Data\Compras\ControladorCompras.cs" />
     <Compile Include="App_Data\Compras\ComprasBaseDatos.cs" />
     <Compile Include="App_Data\FinCompra\ControladorFinCompra.cs" />
