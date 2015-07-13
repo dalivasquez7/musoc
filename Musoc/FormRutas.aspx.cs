@@ -27,7 +27,6 @@ namespace Musoc
 
                 DataTable rutas = controlador.getRutas(cbxOrigen.Value, cbxDestino.Value);
                 
-                int i = 0;
                 if (rutas.Rows.Count > 0)
                 {
                     foreach (DataRow fila in rutas.Rows)
@@ -39,7 +38,6 @@ namespace Musoc
                         datos[3] = fila[4].ToString();
                         datos[4] = fila[5].ToString();
                         tabla.Rows.Add(datos);
-                        i++;
                     }
                 }
                 GridRutas.DataBind();

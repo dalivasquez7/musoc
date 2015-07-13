@@ -35,13 +35,13 @@
     init();
 
    // Case II: If already booked
-   // var bookedSeats = [5, 10, 25];
+    //var bookedSeats = [5, 10, 25];
     //init(bookedSeats);
 
 
     $('.' + settings.seatCss).live('click', function () {
         if ($(this).hasClass(settings.selectedSeatCss)) {
-            alert('Este asiento ya esta reservado');
+            alert('Este asiento ya est');
         }
         else {
             $(this).toggleClass(settings.selectingSeatCss);

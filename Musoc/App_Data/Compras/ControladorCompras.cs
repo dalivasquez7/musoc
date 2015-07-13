@@ -34,5 +34,12 @@ namespace Musoc
             return dt;
         }
 
+        public DataTable obtenerOcupados(String fecha, String codigo, String hora)
+        {
+
+            DataTable dt = baseDatos.asientoOcupados(fecha, codigo, hora);
+            return dt;
+        }
+
     }
 }

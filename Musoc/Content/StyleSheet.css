@@ -277,3 +277,14 @@ legend {
     float: left;
 }
 
+.tdsFin{
+    height: 50px;
+    width: 200px;
+    vertical-align: bottom;
+    padding: initial;
+    text-align: center;
+    font-size: 14px;
+    font-family: Lucida Sans;
+    color: darkblue;
+}
+

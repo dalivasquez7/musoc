@@ -16,6 +16,7 @@ namespace Musoc
         public String codigo;
         public DateTime fecha;
         public String horaViaje;
+  
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,8 +43,27 @@ namespace Musoc
 
         protected void clickMostrarAsientos(object sender, EventArgs e)
         {
+            asignarValores();
+            String fechx = fecha.ToString("dd/MM/yyyy");
+          
+            DataTable asientosOcupados = controlador.obtenerOcupados(fechx, codigo, horaViaje);
+            int[] ocupados;
+           
+            int i = 0;
 
+            if (asientosOcupados.Rows.Count > 0)
+            {
+                ocupados = new int[asientosOcupados.Rows.Count-1]; //pone los numeros de asientos en un array de int
 
+                foreach (DataRow fila in asientosOcupados.Rows)
+                {
+                    ocupados[i] = int.Parse(fila[0].ToString());
+                    
+                }
+
+                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Init", "init('" + ocupados + "');", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "Init", "init('" + ocupados + "');", true);
+            }
         }
 
         protected void clickAgregarHora(object sender, EventArgs e)

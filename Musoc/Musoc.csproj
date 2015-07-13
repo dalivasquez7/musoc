@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FormCompras.aspx" />
+    <Content Include="FormFin.aspx" />
     <Content Include="FormFinCompra.aspx" />
     <Content Include="FormRutas.aspx" />
     <Content Include="Images\available_seat_img.gif" />
@@ -114,6 +115,13 @@
     </Compile>
     <Compile Include="FormCompras.aspx.designer.cs">
       <DependentUpon>FormCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFin.aspx.cs">
+      <DependentUpon>FormFin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFin.aspx.designer.cs">
+      <DependentUpon>FormFin.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormFinCompra.aspx.cs">
       <DependentUpon>FormFinCompra.aspx</DependentUpon>
