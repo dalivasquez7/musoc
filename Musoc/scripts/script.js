@@ -28,14 +28,14 @@
             }
         }
         $('#lugar').html(str.join(''));
-        chargePerSheet = $('#<%=txtAmount.ClientID %>').val();
+        chargePerSheet = $('#txtMonto').val();
     };
 
     //case I: Show from starting
-    init();
+   // init();
 
    // Case II: If already booked
-    var bookedSeats = [5, 10, 25];
+    var bookedSeats = [];
     //init(bookedSeats);
 
 
@@ -54,8 +54,7 @@
             str.push($(this).attr('title'));
         });
         if (str.length > 0) {
-            $('#<%=txtAmount.ClientID %>').val(str.length * chargePerSheet);
-            $('#<%=txtSeatNo.ClientID %>').val(str.join(','));
+            $('#txtMonto').val(str.length * chargePerSheet);
             $('#txtNumAsiento').val(str.join(','));
         //alert(str.join(','));
             //window.open("FormFinCompra.aspx");

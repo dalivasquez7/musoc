@@ -16,6 +16,14 @@ namespace Musoc
         protected void Page_Load(object sender, EventArgs e)
         {
             listHora.Items.Clear();
+            if (!IsPostBack){
+                BindSeats();
+            } 
+        }
+
+        void BindSeats(){
+            //string sel = "7";
+            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
         }
 
         protected String dias()
