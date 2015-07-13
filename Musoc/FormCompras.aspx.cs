@@ -12,11 +12,23 @@ namespace Musoc
     {
 
         private ControladorCompras controlador = new ControladorCompras();
+        string[] arr = new string[] { "1", "2", "3" };
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                BindSeats();
+            }   
+    
             listHora.Items.Clear();
         }
+
+        public void BindSeats()
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
+        }
+ 
 
         protected String dias()
         {
@@ -80,9 +92,14 @@ namespace Musoc
             }
         }
 
-        protected void asientoSeleccionado() {
+        protected void BotonComprar_click(object sender, EventArgs e)
+        {
             String asientos = txtNumAsiento.Text;
+            string sel = "1,4,5";
+            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init(" + arr + ");", true);
         }
         
+
+
     }
 }

@@ -52,7 +52,7 @@
                     <tr>
                         <td class="tds">Hora:</td>
                         <td class="tds">
-                            <asp:DropDownList ID="listHora" runat="server" AutoPostBack="true" OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
+                            <asp:DropDownList ID="listHora" runat="server"  OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
                         </td>
                     </tr>
                 </table>
@@ -77,15 +77,13 @@
                     </ul>
                 </div>
                 <div style="clear: both; width: 100%">
-                    <input type="button" id="btnComprar" value="Comprar" OnClick=""/>
-                    <br>
-                    <p>
-                        <asp:Label ID="Label4" runat="server" Text="Seat No." AssociatedControlID="txtSeatNo"></asp:Label>
-                        <asp:TextBox ID="txtNumAsiento" runat="server" ></asp:TextBox>
-                    </p>
+                    <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
                 </div>
 
             </fieldset>
+        </div>
+        <div>
+            <asp:Button Text=ComprarBoletos value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
         </div>
     </form>
 </body>
