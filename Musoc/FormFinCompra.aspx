@@ -29,21 +29,21 @@
                     Monto a pagar:
                     <asp:TextBox ID="txtMonto" runat="server" ReadOnly="true"></asp:TextBox>
                     Nombre que aparece en la tarjeta:
-                    <br><input type="text" name="nombre"><br>
+                    <br><input type="text" name="nombre"/><br>
                     <br>
                     Numero de Tarjeta:
-                    <br><input type="number" name="numTarjeta" min="0"><br>
-                    <br>
+                    <br><input type="number" name="numTarjeta" min="0/"><br/>
+                    <br/>
                     Fecha de Vencimiento:
                     <br><input type="month" name="expDate"><br>
                     <br>
                     Codigo de Seguridad:
-                    <br><input type="number" name="codTarjeta" min="0" max="999"><br>
+                    <br><input type="number" name="codTarjeta" min="0" max="999"/><br>
                     <br>
                     Email:
-                    <br><input type="email" name="email"><br>
+                    <br><input type="email" name="email"/><br>
                     <br>
-                    <input type="submit" value="Comprar">
+                    <input type="submit" value="Comprar"/>
                     <input type="reset">
                 </p>
             </fieldset>
