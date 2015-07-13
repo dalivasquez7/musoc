@@ -66,4 +66,8 @@
         alert(str.join(','));
         window.open("FormFinCompra.aspx");
     })
+
+
+
+
 });
