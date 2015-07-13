@@ -33,7 +33,7 @@
     init();
 
    // Case II: If already booked
-    //var bookedSeats = [5, 10, 25];
+    var bookedSeats = [5, 10, 25];
     //init(bookedSeats);
 
 

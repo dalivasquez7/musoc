@@ -78,6 +78,7 @@
                 <div style="clear: both; width: 100%">
                     <input type="button" id="btnComprar" value="Comprar"/>
                 </div>
+                 
             </fieldset>
         </div>
     </form>

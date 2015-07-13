@@ -10,7 +10,7 @@ namespace Musoc
 {
     public partial class FormCompras : System.Web.UI.Page
     {
-        private String fecha;
+
         private ControladorCompras controlador = new ControladorCompras();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -44,9 +44,20 @@ namespace Musoc
         protected void llenarHora()
         {
             String dia = dias();
-            if (cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro") && (dia.Equals("sábado") || dia.Equals("Saturday")) || (dia.Equals("domingo") || dia.Equals("Sunday")))
+            if (cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro") && ((dia.Equals("sábado") || dia.Equals("Saturday")) || (dia.Equals("domingo") || dia.Equals("Sunday"))))
             {
                 DataTable horas = controlador.horasFindeSemana(); //no incluye los horarios que son Lunes-Viernes
+                if (horas.Rows.Count > 0)
+                {
+                    for (int i = 0; i < horas.Rows.Count; i++)
+                    {
+                        listHora.Items.Add(horas.Rows[i][0].ToString());
+                    }
+                }
+            }
+            else if (cbxOrigen.Value.Equals("San Isidro") && cbxDestino.Value.Equals("San Jose") && dia.Equals("domingo") || dia.Equals("Sunday")) //todos + domingos.
+            {
+                DataTable horas = controlador.horasTodas();  //todas las horas entre semana, no incluye domingos
                 if (horas.Rows.Count > 0)
                 {
                     for (int i = 0; i < horas.Rows.Count; i++)
@@ -59,17 +70,6 @@ namespace Musoc
             {
                 
                 DataTable horas = controlador.horasSemana(cbxOrigen.Value, cbxDestino.Value);  //todas las horas entre semana, no incluye domingos
-                if (horas.Rows.Count > 0)
-                {
-                    for (int i = 0; i < horas.Rows.Count; i++)
-                    {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
-                    }
-                }
-            }
-            else if (cbxOrigen.Value.Equals("San Isidro") && cbxDestino.Value.Equals("San Jose") && dia.Equals("domingo") || dia.Equals("Sunday")) //todos + domingos.
-            {
-                DataTable horas = controlador.horasTodas();  //todas las horas entre semana, no incluye domingos
                 if (horas.Rows.Count > 0)
                 {
                     for (int i = 0; i < horas.Rows.Count; i++)
