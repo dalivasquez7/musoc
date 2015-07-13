@@ -7,11 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace Musoc
 {
-	public partial class FormFinCompra : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class FormFinCompra : System.Web.UI.Page
+    {
+        public static String codigo;
+        public static String hora;
+        public static String asientos;
+        public static DateTime fecha;
+        public ControladorFinCompra controlador = new ControladorFinCompra();
 
-		}
-	}
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

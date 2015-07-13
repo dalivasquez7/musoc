@@ -12,7 +12,10 @@ namespace Musoc
     {
 
         private ControladorCompras controlador = new ControladorCompras();
-        string[] arr = new string[] { "1", "2", "3" };
+        public String asientos;
+        public String codigo;
+        public DateTime fecha;
+        public String horaViaje;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,15 +24,6 @@ namespace Musoc
                 BindSeats();
             }   
     
-            listHora.Items.Clear();
-            if (!IsPostBack){
-                BindSeats();
-            } 
-        }
-
-        void BindSeats(){
-            //string sel = "7";
-            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
         }
 
         public void BindSeats()
@@ -41,7 +35,6 @@ namespace Musoc
         protected String dias()
         {
             String dia;
-           // String fecha = DateTime.Parse(diaSeleccionado.Value).ToString("dd/MM/yyyy");
             DateTime diaSelec = DateTime.Parse(diaSeleccionado.Value);
             return dia = diaSelec.ToString("dddd");
             
@@ -55,7 +48,7 @@ namespace Musoc
 
         protected void clickAgregarHora(object sender, EventArgs e)
         {
-           
+            listHora.Items.Clear();
             llenarHora();
 
 
@@ -100,11 +93,31 @@ namespace Musoc
             }
         }
 
+        protected void asignarValores()
+        {
+            if (cbxOrigen.Value.Equals("San Isidro") && cbxDestino.Value.Equals("San Jose"))
+            {
+                codigo = "PZ";
+            }
+            else if (cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro"))
+            {
+                codigo = "SJO";
+            }
+
+            fecha = DateTime.Parse(diaSeleccionado.Value);
+            horaViaje = listHora.Text;
+
+        }
+
         protected void BotonComprar_click(object sender, EventArgs e)
         {
-            String asientos = txtNumAsiento.Text;
-            string sel = "1,4,5";
-            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init(" + arr + ");", true);
+            asignarValores();
+            asientos = txtNumAsiento.Text;
+            FormFinCompra.asientos = asientos;
+            FormFinCompra.codigo = codigo;
+            FormFinCompra.fecha = fecha;
+            FormFinCompra.hora = horaViaje;
+            Response.Redirect("~/FormFinCompra.aspx");
         }
         
 

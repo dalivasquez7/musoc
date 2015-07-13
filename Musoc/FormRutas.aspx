@@ -1,7 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FormRutas.aspx.cs" Inherits="Musoc.FormRutas" %>
 
 <!DOCTYPE html>
-<link rel="stylesheet" href="Content/StyleSheet.css" />
+<head>
+    <title></title>
+    <link rel="stylesheet" href="Content/StyleSheet.css" />
+</head>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 

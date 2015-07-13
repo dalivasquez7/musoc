@@ -107,6 +107,8 @@
     <Compile Include="App_Data\Rutas\EntidadRutas.cs" />
     <Compile Include="App_Data\Compras\ControladorCompras.cs" />
     <Compile Include="App_Data\Compras\ComprasBaseDatos.cs" />
+    <Compile Include="App_Data\FinCompra\ControladorFinCompra.cs" />
+    <Compile Include="App_Data\FinCompra\FinCompraBaseDatos.cs" />
     <Compile Include="FormCompras.aspx.cs">
       <DependentUpon>FormCompras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -6,6 +6,8 @@
 <head runat="server">
     <title></title>
     <link type="text/css" rel="stylesheet" href="Content/StyleSheet.css" />
+    <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -25,25 +27,31 @@
         <div id="#section">
             <fieldset class="fieldStilo">
                 <legend>Comprador</legend>
-                <p> 
+                <p>
                     Monto a pagar:
                     <asp:TextBox ID="txtMonto" runat="server" ReadOnly="true"></asp:TextBox>
                     Nombre que aparece en la tarjeta:
-                    <br><input type="text" name="nombre"/><br>
+                    <br>
+                    <input type="text" name="nombre" /><br>
                     <br>
                     Numero de Tarjeta:
-                    <br><input type="number" name="numTarjeta" min="0/"><br/>
-                    <br/>
+                    <br>
+                    <input type="number" name="numTarjeta" min="0/"><br />
+                    <br />
                     Fecha de Vencimiento:
-                    <br><input type="month" name="expDate"><br>
+                    <br>
+                    <input type="month" name="expDate"><br>
                     <br>
                     Codigo de Seguridad:
-                    <br><input type="number" name="codTarjeta" min="0" max="999"/><br>
+                    <br>
+                    <input type="number" name="codTarjeta" min="0" max="999" /><br>
                     <br>
                     Email:
-                    <br><input type="email" name="email"/><br>
                     <br>
-                    <input type="submit" value="Comprar"/>
+                    <input type="email" name="email" /><br>
+                    <br>
+                    <asp:Button Text="Finalizar Compra" value="Comprar" id="btnFinComprar" runat="server" OnClick="BotonFinCompra_click" />
+          
                     <input type="reset">
                 </p>
             </fieldset>
@@ -51,4 +59,3 @@
     </form>
 </body>
 </html>
-

@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title></title>
     <link type="text/css" rel="stylesheet" href="Content/StyleSheet.css" />
     <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
@@ -51,7 +52,7 @@
                     <tr>
                         <td class="tds">Hora:</td>
                         <td class="tds">
-                            <asp:DropDownList ID="listHora" runat="server"  OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
+                            <asp:DropDownList ID="listHora" runat="server" AutoPostBack="true" OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
                         </td>
                     </tr>
                 </table>
