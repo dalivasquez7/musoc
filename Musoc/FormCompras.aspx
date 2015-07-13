@@ -76,7 +76,12 @@
                     </ul>
                 </div>
                 <div style="clear: both; width: 100%">
-                    <input type="button" id="btnComprar" value="Comprar"/>
+                    <input type="button" id="btnComprar" value="Comprar" OnClick=""/>
+                    <br>
+                    <p>
+                        <asp:Label ID="Label4" runat="server" Text="Seat No." AssociatedControlID="txtSeatNo"></asp:Label>
+                        <asp:TextBox ID="txtNumAsiento" runat="server" ></asp:TextBox>
+                    </p>
                 </div>
             </fieldset>
         </div>

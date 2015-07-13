@@ -6,117 +6,117 @@
 
 
 .clearfix:after {
-    display:block;
-    clear:both;
+    display: block;
+    clear: both;
 }
- 
+
 
 .menu-wrap ul {
-margin: 0px;
-padding: 5px;
+    margin: 0px;
+    padding: 5px;
 }
+
 .menu-wrap {
-    width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-	/*position: absolute;*/
-    background:#660000;
-	display: inline-block;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    /*position: absolute;*/
+    background: #660000;
+    display: inline-block;
 }
 
 .menu {
-    width:1000px;
-    margin:0px auto;
-	
+    width: 1000px;
+    margin: 0px auto;
 }
 
- 
-.menu li {
-    margin:0px;
-    list-style:none;
-    font-family:Cambria;
-}
- 
-.menu a {
-	text-decoration: none;
-    transition:all linear 0.15s;
-    color:white;
-}
- 
-.menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
-    color:white;
-}
 
-.menu .arrow {
-    font-size:11px;
-    line-height:0%;
-}
- 
-.menu > ul > li {
-    float:left;
-    display:inline-block;
-    position:relative;
-    font-size:19px;
-}
- 
-.menu > ul > li > a {
-    padding:10px 30px;
-    display:inline-block;
-    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
-}
- 
-.menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
-}
+    .menu li {
+        margin: 0px;
+        list-style: none;
+        font-family: Cambria;
+    }
 
-.menu li:hover .sub-menu {
-    z-index:1;
-    opacity:1;
-}
- 
+    .menu a {
+        text-decoration: none;
+        transition: all linear 0.15s;
+        color: white;
+    }
+
+    .menu li:hover > a, .menu .current-item > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu .arrow {
+        font-size: 11px;
+        line-height: 0%;
+    }
+
+    .menu > ul > li {
+        float: left;
+        display: inline-block;
+        position: relative;
+        font-size: 19px;
+    }
+
+        .menu > ul > li > a {
+            padding: 10px 30px;
+            display: inline-block;
+            text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+        }
+
+        .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+            background: #2e2728;
+        }
+
+    .menu li:hover .sub-menu {
+        z-index: 1;
+        opacity: 1;
+    }
+
 .sub-menu {
-    width:160%;
-    padding:5px 0px;
-    position:absolute;
-    top:100%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
+    width: 160%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #2e2728;
 }
- 
-.sub-menu li {
-    display:block;
-    font-size:16px;
-}
- 
-.sub-menu li a {
-    padding:10px 30px;
-    display:block;
-}
- 
-.sub-menu li a:hover, .sub-menu .current-item a {
-    background:#3e3436;
-}
+
+    .sub-menu li {
+        display: block;
+        font-size: 16px;
+    }
+
+        .sub-menu li a {
+            padding: 10px 30px;
+            display: block;
+        }
+
+            .sub-menu li a:hover, .sub-menu .current-item a {
+                background: #3e3436;
+            }
 /**end*/
 
-.grid{
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
+.grid {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 15px;
-    padding-bottom:0px;
+    padding-bottom: 0px;
 }
 
 #section {
-    width:350px;
-    float:left;
-    padding:35px;	 	 
+    width: 350px;
+    float: left;
+    padding: 35px;
 }
 
-.fieldStilo{
+.fieldStilo {
     display: block;
     margin-left: 100px;
     margin-right: 100px;
@@ -127,7 +127,7 @@ padding: 5px;
 }
 
 
-.fieldBoleto{
+.fieldBoleto {
     display: block;
     margin-left: 100px;
     margin-right: 100px;
@@ -141,58 +141,56 @@ padding: 5px;
     height: 50px;
     width: 85px;
     vertical-align: bottom;
-    padding:initial;
-    text-align:center;
-    font-size:16px;
-    font-family:Lucida Sans;
-    color:darkblue;
+    padding: initial;
+    text-align: center;
+    font-size: 16px;
+    font-family: Lucida Sans;
+    color: darkblue;
 }
 
-#tdBoton{
- 
+#tdBoton {
     height: 50px;
     width: 35px;
     vertical-align: bottom;
-    padding:initial;
-    text-align:center;
-    font-size:16px;
-    font-family:Lucida Sans;
-    color:darkblue;
+    padding: initial;
+    text-align: center;
+    font-size: 16px;
+    font-family: Lucida Sans;
+    color: darkblue;
 }
 
-legend{
-    font-size:medium;
-    font-family:'Lucida Sans';
-    color:#191970;
+legend {
+    font-size: medium;
+    font-family: 'Lucida Sans';
+    color: #191970;
 }
 
 .Grid {
-    background-color: #fff; 
-    margin-left:70px; 
-    border: solid 1px #525252; 
-    border-collapse:collapse; 
-    font-family:Lucida Sans; 
+    background-color: #fff;
+    margin-left: 70px;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    font-family: Lucida Sans;
     color: #474747;
-    text-align:center;
-    grid-column-sizing:minmax(8, 25);
-    font-size:14px;
+    text-align: center;
+    grid-column-sizing: minmax(8, 25);
+    font-size: 14px;
     margin-top: 15px;
 }
 
-.Grid th  {
-      padding : 10px 15px;
-      color: #fff;
-      background: #414429 url(Images/grid-header.png) repeat-x top;
-      border-left: solid 1px #525252;
-      font-size: 0.9em;
-}
+    .Grid th {
+        padding: 10px 15px;
+        color: #fff;
+        background: #414429 url(Images/grid-header.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
 
 
-.logo{
-    background-color:#660000;
-    border-bottom:double;
-    border-bottom-color:#EAEAEA;
-
+.logo {
+    background-color: #660000;
+    border-bottom: double;
+    border-bottom-color: #EAEAEA;
 }
 
 .logoFont {
@@ -200,79 +198,81 @@ legend{
     font-size: 40px;
     font-family: Arial;
     font-weight: 900;
-    color: #FFF;    
-
+    color: #FFF;
 }
 
 #nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:450px;
-    width:100px;
-    float:left;
-    padding:5px;	      
-    background-color: blue; 
+    line-height: 30px;
+    background-color: #eeeeee;
+    height: 450px;
+    width: 100px;
+    float: left;
+    padding: 5px;
+    background-color: blue;
 }
+
 #section {
     line-height: 30px;
     background-color: #EEE;
     height: 450px;
     width: 100px;
     float: left;
-    padding: 5px; 
+    padding: 5px;
 }
 
 /**BUS**/
-#bus {    
-	height:200px;    
-	width:550px;
-	background-color:#F5F5F5;
-	border:1px solid #A4A4A4;
-	border-radius: 30px;
-	margin-left:10px;   
+
+#bus {
+    height: 200px;
+    width: 550px;
+    background-color: #F5F5F5;
+    border: 1px solid #A4A4A4;
+    border-radius: 30px;
+    margin-left: 10px;
 }
 
 #lugar {
-	position:relative;
-	margin:7px;
+    position: relative;
+    margin: 7px;
 }
 
-#lugar a {
-	font-size:0.6em;
+    #lugar a {
+        font-size: 0.6em;
+    }
+
+    #lugar li {
+        list-style: none outside none;
+        position: absolute;
+    }
+
+        #lugar li:hover {
+            background-color: yellow;
+        }
+
+    #lugar .asiento {
+        background: url("../images/available_seat_img.gif") no-repeat scroll 0 0 transparent;
+        height: 33px;
+        width: 33px;
+        display: inline-block;
+    }
+
+    #lugar .AsientoSeleccionado {
+        background-image: url("../images/booked_seat_img.gif");
+    }
+
+    #lugar .EligiendoAsiento {
+        background-image: url("../images/selected_seat_img.gif");
+    }
+
+    #lugar .row-2, #lugar .row-3 {
+        margin-top: 30px;
+    }
+
+#DescripcionAsiento li {
+    vertical-align: middle;
+    list-style: none outside none;
+    padding-left: 35px;
+    height: 35px;
+    float: left;
 }
 
-#lugar li {
-	list-style: none outside none;
-	position: absolute;   
-}  
-
-#lugar li:hover{
-	background-color:yellow;      
-}
-
-#lugar .asiento{
-	background:url("../images/available_seat_img.gif") no-repeat scroll 0 0 transparent;
-	height:33px;
-	width:33px;
-	display:inline-block;   
-}
-
-#lugar .AsientoSeleccionado{ 
-	background-image:url("../images/booked_seat_img.gif");          
-}
-
-#lugar .EligiendoAsiento{ 
-	background-image:url("../images/selected_seat_img.gif");        
-}
-
-#lugar .row-2, #lugar .row-3{
-	margin-top:30px;
-}
-
-#DescripcionAsiento li{
-	vertical-align:middle;    
-	list-style: none outside none;
-	padding-left:35px;
-	height:35px;
-	float:left;
-}
