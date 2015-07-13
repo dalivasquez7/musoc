@@ -6,7 +6,6 @@
     <link type="text/css" rel="stylesheet" href="Content/StyleSheet.css" />
     <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -79,7 +78,6 @@
                 <div style="clear: both; width: 100%">
                     <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
                 </div>
-
             </fieldset>
         </div>
         <div>

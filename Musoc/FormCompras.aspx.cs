@@ -22,6 +22,14 @@ namespace Musoc
             }   
     
             listHora.Items.Clear();
+            if (!IsPostBack){
+                BindSeats();
+            } 
+        }
+
+        void BindSeats(){
+            //string sel = "7";
+            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
         }
 
         public void BindSeats()
