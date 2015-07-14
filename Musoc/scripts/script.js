@@ -32,16 +32,16 @@
     };
 
     //case I: Show from starting
-   // init();
+    init();
 
    // Case II: If already booked
-    var bookedSeats = [];
+    //var bookedSeats = [5, 10, 25];
     //init(bookedSeats);
 
 
     $('.' + settings.seatCss).live('click', function () {
         if ($(this).hasClass(settings.selectedSeatCss)) {
-            alert('This seat is already reserved');
+            alert('Este asiento ya est');
         }
         else {
             $(this).toggleClass(settings.selectingSeatCss);
@@ -58,9 +58,6 @@
             $('#txtNumAsiento').val(str.join(','));
         //alert(str.join(','));
             //window.open("FormFinCompra.aspx");
-        }
-        else {
-            alert('Select atleast one seat');
         }
         
     }) 

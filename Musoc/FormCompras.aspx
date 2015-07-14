@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title></title>
     <link type="text/css" rel="stylesheet" href="Content/StyleSheet.css" />
     <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
@@ -25,6 +26,15 @@
             <fieldset class="fieldBoleto">
                 <legend>Rutas</legend>
                 <table>
+                    <tr>
+                        <a href="">
+                            <div id="alertAlerta" class="alert alert-danger fade in"  runat="server" hidden="hidden">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <strong>
+                                    <asp:Label ID="labelTipoAlerta" runat="server" Text="Alerta! "></asp:Label></strong><asp:Label ID="labelAlerta" runat="server" Text="Mensaje de alerta"></asp:Label>
+                            </div>
+                        </a>
+                    </tr>
                     <tr>
                         <td class="tds">Origen:</td>
                         <td class="tds">
@@ -57,7 +67,6 @@
                 </table>
             </fieldset>
         </div>
-
         <!--BUS-->
 
         <div id="#section">
@@ -76,13 +85,12 @@
                     </ul>
                 </div>
                 <div style="clear: both; width: 100%">
-                    <input type="button" id="btnComprar" value="Comprar" OnClick=""/>
-                    <br>
-                    <p>
-                        <asp:TextBox ID="txtNumAsiento" runat="server" ></asp:TextBox>
-                    </p>
+                    <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
                 </div>
             </fieldset>
+        </div>
+        <div>
+            <asp:Button Text="ComprarBoletos" value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
         </div>
     </form>
 </body>

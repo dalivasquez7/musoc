@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FormCompras.aspx" />
+    <Content Include="FormFin.aspx" />
     <Content Include="FormFinCompra.aspx" />
     <Content Include="FormRutas.aspx" />
     <Content Include="Images\available_seat_img.gif" />
@@ -104,15 +105,23 @@
   <ItemGroup>
     <Compile Include="App_Data\AdaptadorBD.cs" />
     <Compile Include="App_Data\Rutas\ControladorRutas.cs" />
-    <Compile Include="App_Data\Rutas\EntidadRutas.cs" />
     <Compile Include="App_Data\Compras\ControladorCompras.cs" />
     <Compile Include="App_Data\Compras\ComprasBaseDatos.cs" />
+    <Compile Include="App_Data\FinCompra\ControladorFinCompra.cs" />
+    <Compile Include="App_Data\FinCompra\FinCompraBaseDatos.cs" />
     <Compile Include="FormCompras.aspx.cs">
       <DependentUpon>FormCompras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FormCompras.aspx.designer.cs">
       <DependentUpon>FormCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFin.aspx.cs">
+      <DependentUpon>FormFin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFin.aspx.designer.cs">
+      <DependentUpon>FormFin.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormFinCompra.aspx.cs">
       <DependentUpon>FormFinCompra.aspx</DependentUpon>

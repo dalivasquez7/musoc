@@ -20,15 +20,13 @@ namespace Musoc
         void llenarGrid()
         {
             DataTable tabla = crearTabla();
-            String id = generarId();
-
+       
             try
             {
-                Object[] datos = new Object[6];
+                Object[] datos = new Object[5];
 
                 DataTable rutas = controlador.getRutas(cbxOrigen.Value, cbxDestino.Value);
                 
-                int i = 0;
                 if (rutas.Rows.Count > 0)
                 {
                     foreach (DataRow fila in rutas.Rows)
@@ -38,10 +36,8 @@ namespace Musoc
                         datos[1] = fila[3].ToString();
                         datos[2] = fila[1].ToString();
                         datos[3] = fila[4].ToString();
-                        datos[4] = fila[6].ToString();
-                        datos[5] = fila[5].ToString();
+                        datos[4] = fila[5].ToString();
                         tabla.Rows.Add(datos);
-                        i++;
                     }
                 }
                 GridRutas.DataBind();
@@ -52,19 +48,6 @@ namespace Musoc
             }
         }
 
-        protected String generarId()
-        {
-            String id="nil";
-            if (cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("Perez Zeledon"))
-            {
-                id = "SJO";
-            }
-            else if (cbxOrigen.Value.Equals("Perez Zeledon") && cbxDestino.Value.Equals("San Jose"))
-            {
-                id = "PZ";
-            }
-            return id;
-        }
         protected DataTable crearTabla()//consultar
         {
             DataTable tabla = new DataTable();
@@ -93,11 +76,6 @@ namespace Musoc
             columna = new DataColumn();
             columna.DataType = System.Type.GetType("System.String");
             columna.ColumnName = "Días Disponibles";
-            tabla.Columns.Add(columna);
-
-            columna = new DataColumn();
-            columna.DataType = System.Type.GetType("System.String");
-            columna.ColumnName = "Tarifa";
             tabla.Columns.Add(columna);
 
             GridRutas.DataSource = tabla;

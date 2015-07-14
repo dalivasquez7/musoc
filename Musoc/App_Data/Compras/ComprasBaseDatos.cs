@@ -39,6 +39,15 @@ namespace Musoc
             dt = adaptador.ejecutarConsultaTabla(consultaSQL);
             return dt;
         }
+
+        internal DataTable asientoOcupados(String fecha, String codigo, String hora) //solicitar asientos que tienen estado "ocupado"
+        {
+            String consultaSQL = "select numAsientos from asientos where fecha = '"+ fecha +"' and idRuta = '"+ codigo +"' and horaRutas= '"+ hora +"'  ";
+            dt = adaptador.ejecutarConsultaTabla(consultaSQL);
+            return dt;
+        }
+
+        
         
     }
 }
