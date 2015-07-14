@@ -16,21 +16,26 @@ namespace Musoc
         public String codigo;
         public DateTime fecha;
         public String horaViaje;
-
+        public static int[] ocupados;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            
+            if (!ClientScript.IsStartupScriptRegistered("Init"))
             {
-                BindSeats();
-            } 
+                ocupados = new int[] { 1, 2 };
+               BindSeats();
+            }
+                
 
         }
 
         public void BindSeats()
         {
-            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
+              
         }
+
 
 
         protected String dias()
@@ -41,13 +46,13 @@ namespace Musoc
             
         }
 
-        protected void clickMostrarAsientos(object sender, EventArgs e)
+       protected void clickMostrarAsientos(object sender, EventArgs e)
         {
-            asignarValores();
+           /* asignarValores();
             String fechx = fecha.ToString("dd/MM/yyyy");
           
             DataTable asientosOcupados = controlador.obtenerOcupados(fechx, codigo, horaViaje);
-            int[] ocupados;
+            
            
             int i = 0;
 
@@ -61,9 +66,8 @@ namespace Musoc
             
                 }
 
-                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Init", "init('" + ocupados + "');", true);
-                ClientScript.RegisterStartupScript(this.GetType(), "Init", "init('" + ocupados + "');", true);
-        }
+                BindSeats();
+        }*/
         }
 
         protected void clickAgregarHora(object sender, EventArgs e)

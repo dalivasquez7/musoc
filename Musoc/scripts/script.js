@@ -12,7 +12,7 @@
     };
 
     var chargePerSheet;
-    var init = function (reservedSeat) {
+    var init = function(reservedSeat) {
         var str = [], seatNo, className;
         for (i = 0; i < settings.rows; i++) {
             for (j = 0; j < settings.cols; j++) {
@@ -30,14 +30,6 @@
         $('#lugar').html(str.join(''));
         chargePerSheet = $('#txtMonto').val();
     };
-
-    //case I: Show from starting
-    init();
-
-   // Case II: If already booked
-    //var bookedSeats = [5, 10, 25];
-    //init(bookedSeats);
-
 
     $('.' + settings.seatCss).live('click', function () {
         if ($(this).hasClass(settings.selectedSeatCss)) {
