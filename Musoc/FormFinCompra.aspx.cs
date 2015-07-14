@@ -28,10 +28,11 @@ namespace Musoc
             int valor = (3350 * (asiento.Length));
             montoTotal.Value = valor.ToString();
             montoTotal.Disabled = true;
+            txtAsientos.Value = asientos;
           
         }
 
-        protected void BotonFinCompra_click(object sender, EventArgs e)
+      protected void BotonFinCompra_click(object sender, EventArgs e)
         {
            
             String fech = fecha.ToString("dd/MM/yyyy");
@@ -41,14 +42,9 @@ namespace Musoc
 
                 controlador.finalizar(asiento[i], fech, "ocupado", codigo, hora);
             }
-                
 
+            Response.Redirect("~/FormFin.aspx");
         }
 
-        protected void Click_Cancelar(object sender, EventArgs e)
-        {
-            Response.Redirect("~/FormInicio.aspx");
-        }
-        
     }
 }

@@ -19,20 +19,26 @@
             <nav class="menu">
                 <ul class="clearfix">
                     <li><a href="Inicio.aspx">Inicio</a> </li>
-                    <li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
+                    <li><a href="FormRutas.aspx">Rutas & Horarios</a> </li>
                     <li><a href="FormCompras.aspx">Compra de boletos</a></li>
                 </ul>
             </nav>
         </div>
         <div id="#section">
             <fieldset class="fieldStilo">
-                <legend>Información de Compra</legend>
+
                 <table>
                     <tr>
                         <td class="tdsFin">Monto a pagar:</td>
                         <td class="tdsFin">
-                      <input id="montoTotal" runat="server" /></td>
-                       
+                            <input id="montoTotal" runat="server" /></td>
+
+                    </tr>
+                    <tr>
+                        <td class="tdsFin">Asientos Seleccionados:</td>
+                        <td class="tdsFin">
+                            <input id="txtAsientos" runat="server" /></td>
+
                     </tr>
                     <tr>
                         <td class="tdsFin">Nombre que aparece en la tarjeta: </td>
@@ -42,7 +48,7 @@
                     <tr>
                         <td class="tdsFin">Numero de Tarjeta:</td>
                         <td class="tdsFin">
-                            <input name="numTarjeta" min="0/" required="required" placeholder="XXXXXXXXXXXXXX" title="Introduzca valor nuúmerico" pattern="^[0-9]{10, 14}$"></td>
+                            <input name="numTarjeta" min="0/" required="required" placeholder="XXXXXXXXXXXXXX" title="Introduzca valor nuúmerico" pattern="^\d{16}"></td>
                     </tr>
                     <tr>
                         <td class="tdsFin">Fecha de Vencimiento:</td>
@@ -52,20 +58,21 @@
                     <tr>
                         <td class="tdsFin">Codigo de Seguridad:</td>
                         <td class="tdsFin">
-                            <input  name="codTarjeta" min="0" max="999" required="required" placeholder="XXX"></td>
+                            <input name="codTarjeta" required="required" placeholder="XXX" title="Introduzca código de 3 digitos" pattern="^\d{3}"></td>
                     </tr>
                     <tr>
                         <td class="tdsFin">Email:</td>
                         <td class="tdsFin">
-                            <input type="email" name="email" required="required" placeholder="ejemplo@corre.com"/></td>
+                            <input type="email" name="email" required="required" placeholder="ejemplo@corre.com" /></td>
                     </tr>
                 </table>
                 <table>
                     <tr>
+                        <td class="tds"><a id="cancel" href="FormCompras.aspx">
+                           Cancelar
+                        </a></td>
                         <td class="tds">
-                            <asp:Button type="submit" Text="Finalizar Compra" value="Comprar" ID="btnFinComprar" runat="server" OnClick="BotonFinCompra_click" /></td>
-                        <td class="tds">
-                           <asp:Button Text="Cancelar" value="Comprar" ID="btnCancelar" runat="server" OnClick="Click_Cancelar" /></td>
+                            <asp:Button class="boton1" type="submit" Text="Comprar" value="Comprar" ID="btnFinComprar" runat="server" OnClick="BotonFinCompra_click" /></td>
                     </tr>
                 </table>
             </fieldset>

@@ -17,18 +17,18 @@
             <nav class="menu">
                 <ul class="clearfix">
                     <li><a href="Inicio.aspx">Inicio</a> </li>
-                    <li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
+                    <li><a href="FormRutas.aspx">Rutas & Horarios</a> </li>
                     <li><a href="FormCompras.aspx">Compra de boletos</a></li>
                 </ul>
             </nav>
         </div>
         <div id="#section">
             <fieldset class="fieldBoleto">
-                <legend>Rutas</legend>
+
                 <table>
                     <tr>
                         <a href="">
-                            <div id="alertAlerta" class="alert alert-danger fade in"  runat="server" hidden="hidden">
+                            <div id="alertAlerta" class="alert alert-danger fade in" runat="server" hidden="hidden">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                 <strong>
                                     <asp:Label ID="labelTipoAlerta" runat="server" Text="Alerta! "></asp:Label></strong><asp:Label ID="labelAlerta" runat="server" Text="Mensaje de alerta"></asp:Label>
@@ -56,7 +56,7 @@
                         </td>
                         <td id="tdBoton"></td>
                         <td class="tds">
-                            <asp:Button Text="Horas Disponibles" class="btn btn-success" ID="btnFechas" runat="server" OnClick="clickAgregarHora" /></td>
+                            <asp:Button class="botonBuscar" Text="Horas Disponibles" ID="btnFechas" runat="server" OnClick="clickAgregarHora" /></td>
                     </tr>
                     <tr>
                         <td class="tds">Hora:</td>
@@ -71,7 +71,7 @@
 
         <div id="#section">
             <fieldset class="fieldStilo">
-                <legend>Asientos</legend>
+
                 <h5>Elija los asientos haciendo click sobre el asiento:</h5>
                 <div id="bus">
                     <ul id="lugar">
@@ -87,10 +87,10 @@
                 <div style="clear: both; width: 100%">
                     <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
                 </div>
+                <div>
+                    <asp:Button class="boton" Text="Siguiente" value="Comprar" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
+                </div>
             </fieldset>
-        </div>
-        <div>
-            <asp:Button Text="ComprarBoletos" value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
         </div>
     </form>
 </body>
