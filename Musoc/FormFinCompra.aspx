@@ -42,7 +42,7 @@
                     <tr>
                         <td class="tdsFin">Numero de Tarjeta:</td>
                         <td class="tdsFin">
-                            <input name="numTarjeta" min="0/" required="required" placeholder="XXXXXXXXXXXXXXXXX" title="Introduzca valor nuúmerico" pattern="^[0-9]$"></td>
+                            <input name="numTarjeta" min="0/" required="required" placeholder="XXXXXXXXXXXXXX" title="Introduzca valor nuúmerico" pattern="^[0-9]{10, 14}$"></td>
                     </tr>
                     <tr>
                         <td class="tdsFin">Fecha de Vencimiento:</td>
