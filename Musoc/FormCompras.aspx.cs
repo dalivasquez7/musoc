@@ -22,8 +22,10 @@ namespace Musoc
         }
 
         void BindSeats(){
-            //string sel = "7";
-            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
+    
+            string sel = "7";
+            ClientScript.RegisterStartupScript(this.GetType(), "Init", "init([" + sel + "]);", true);
+
         }
 
         protected String dias()
