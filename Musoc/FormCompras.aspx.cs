@@ -20,20 +20,20 @@ namespace Musoc
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (!ClientScript.IsStartupScriptRegistered("Init"))
             {
                 ocupados = new int[] { 1, 2 };
-               BindSeats();
+                BindSeats();
             }
-                
+
 
         }
 
         public void BindSeats()
         {
             Page.ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
-              
+
         }
 
 
@@ -43,31 +43,31 @@ namespace Musoc
             String dia;
             DateTime diaSelec = DateTime.Parse(diaSeleccionado.Value);
             return dia = diaSelec.ToString("dddd");
-            
+
         }
 
-       protected void clickMostrarAsientos(object sender, EventArgs e)
+        protected void clickMostrarAsientos(object sender, EventArgs e)
         {
-           /* asignarValores();
+            asignarValores();
             String fechx = fecha.ToString("dd/MM/yyyy");
-          
+
             DataTable asientosOcupados = controlador.obtenerOcupados(fechx, codigo, horaViaje);
-            
-           
+
+
             int i = 0;
 
             if (asientosOcupados.Rows.Count > 0)
             {
-                ocupados = new int[asientosOcupados.Rows.Count-1]; //pone los numeros de asientos en un array de int
+                ocupados = new int[asientosOcupados.Rows.Count - 1]; //pone los numeros de asientos en un array de int
 
                 foreach (DataRow fila in asientosOcupados.Rows)
                 {
                     ocupados[i] = int.Parse(fila[0].ToString());
-            
+
                 }
 
-                BindSeats();
-        }*/
+
+            }
         }
 
         protected void clickAgregarHora(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace Musoc
             try
             {
                 listHora.Items.Clear();
-            llenarHora();
+                llenarHora();
             }
             catch (Exception ee)
             {
@@ -104,14 +104,14 @@ namespace Musoc
                         }
                         else if (horasDisponibles > horaActual)
                         {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
-                    }
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
                         else if (DateTime.Parse(diaSeleccionado.Value) < DateTime.Today)
                         {
                             mostrarMensaje("danger", "Error:", "La fecha ya pasó");
                         }
+                    }
                 }
-            }
             }
             else if (cbxOrigen.Value.Equals("San Isidro") && cbxDestino.Value.Equals("San Jose") && dia.Equals("domingo") || dia.Equals("Sunday")) //todos + domingos.
             {
@@ -127,8 +127,8 @@ namespace Musoc
                         }
                         else if (horasDisponibles > horaActual)
                         {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
-                    }
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
                         else if (DateTime.Parse(diaSeleccionado.Value) < DateTime.Today)
                         {
                             mostrarMensaje("danger", "Error:", "La fecha ya pasó");
@@ -139,7 +139,7 @@ namespace Musoc
             }
             else if ((cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro")) || (cbxOrigen.Value.Equals("San Isidro") && cbxDestino.Value.Equals("San Jose")))
             {
-                
+
                 DataTable horas = controlador.horasSemana(cbxOrigen.Value, cbxDestino.Value);  //todas las horas entre semana, no incluye domingos
                 if (horas.Rows.Count > 0)
                 {
@@ -152,8 +152,8 @@ namespace Musoc
                         }
                         else if (horasDisponibles > horaActual)
                         {
-                        listHora.Items.Add(horas.Rows[i][0].ToString());
-                    }
+                            listHora.Items.Add(horas.Rows[i][0].ToString());
+                        }
                         else if (DateTime.Parse(diaSeleccionado.Value) < DateTime.Today)
                         {
                             mostrarMensaje("danger", "Error:", "La fecha ya pasó");
@@ -172,12 +172,12 @@ namespace Musoc
             else if (cbxOrigen.Value.Equals("San Jose") && cbxDestino.Value.Equals("San Isidro"))
             {
                 codigo = "SJO";
-                }
+            }
 
             fecha = DateTime.Parse(diaSeleccionado.Value);
             horaViaje = listHora.Text;
 
-            }
+        }
 
         protected void mostrarMensaje(String tipoAlerta, String alerta, String mensaje)
         {
@@ -193,7 +193,7 @@ namespace Musoc
             asignarValores();
             if (txtNumAsiento.Text == "")
             {
-               // mostrarMensaje("danger", "Error:", "Seleccione almenos un asiento");
+                // mostrarMensaje("danger", "Error:", "Seleccione almenos un asiento");
             }
             else
             {
