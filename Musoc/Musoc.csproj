@@ -83,6 +83,7 @@
     <Content Include="FormRutas.aspx" />
     <Content Include="Images\available_seat_img.gif" />
     <Content Include="Images\booked_seat_img.gif" />
+    <Content Include="Images\musoc.jpg" />
     <Content Include="Images\selected_seat_img.gif" />
     <Content Include="Inicio.aspx" />
     <Content Include="packages.config" />

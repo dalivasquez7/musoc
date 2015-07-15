@@ -18,7 +18,7 @@
             <nav class="menu">
                 <ul class="clearfix">
                     <li><a href="Inicio.aspx">Inicio</a> </li>
-                    <li><a href="FormRutas.aspx">Rutas y Horario</a> </li>
+                    <li><a href="FormRutas.aspx">Rutas & Horarios</a> </li>
                     <li><a href="FormCompras.aspx">Compra de boletos</a></li>
                 </ul>
             </nav>
@@ -26,8 +26,8 @@
 
         <div id="#section">
             <fieldset class="fieldStilo">
-                <legend>Rutas</legend>
-                <table>
+               
+                <table id="tabla">
                     <tr>
                         <td class="tds">Origen:</td>
                         <td class="tds">
@@ -44,7 +44,7 @@
                             </select>
                         </td>
                         <td class="tds">
-                            <asp:Button Text="Buscar" class="btn btn-success" ID="btnBuscar" runat="server" OnClick="BotonBuscar_click" />
+                            <asp:Button Text="Buscar" class="botonBuscar" ID="btnBuscar" runat="server" OnClick="BotonBuscar_click" />
                         </td>
                     </tr>
                 </table>

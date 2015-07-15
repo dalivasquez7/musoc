@@ -1,5 +1,11 @@
 ﻿
+body {
+    background-color: #00297B;
+}
 
+#body {
+    background-color: white;
+}
 
 
 /**MENU*/
@@ -60,9 +66,10 @@
     }
 
         .menu > ul > li > a {
-            padding: 10px 30px;
+            padding: 10px 40px;
             display: inline-block;
             text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+            margin-left: 65px;
         }
 
         .menu > ul > li:hover > a, .menu > ul > .current-item > a {
@@ -121,10 +128,19 @@
     display: block;
     margin-left: 100px;
     margin-right: 100px;
-    padding-top: 5px;
+    margin-top: 1%;
+    padding-top: 5%;
     padding-left: 200px;
     padding-right: 0px;
     background-color: white;
+    padding-bottom: 5%;
+}
+
+h5 {
+    color: darkblue;
+    font-size: 14px;
+    font-family: Lucida Sans;
+    margin-top: -1%;
 }
 
 
@@ -168,7 +184,7 @@ legend {
 
 .Grid {
     background-color: #fff;
-    margin-left: 70px;
+    margin-left: 10px;
     border: solid 1px #525252;
     border-collapse: collapse;
     font-family: Lucida Sans;
@@ -180,7 +196,7 @@ legend {
 }
 
     .Grid th {
-        padding: 10px 15px;
+        padding: 10px 30px;
         color: #fff;
         background: #414429 url(Images/grid-header.png) repeat-x top;
         border-left: solid 1px #525252;
@@ -202,24 +218,30 @@ legend {
     color: #FFF;
 }
 
-#nav {
-    line-height: 30px;
-    background-color: #eeeeee;
-    height: 450px;
-    width: 100px;
-    float: left;
-    padding: 5px;
-    background-color: blue;
+#tabla {
+    padding-left: 15gripx;
+    margin-top: -3%;
 }
 
-#section {
-    line-height: 30px;
-    background-color: #EEE;
-    height: 450px;
-    width: 100px;
+#nav {
+    /*line-height: 100;*/
+    background-color: #003399;
+    height: 400px;
     float: left;
-    padding: 5px;
+    padding: 2%;
+    padding-top: 10%;
+    margin-top: 1%;
+    text-align: initial;
+    border-radius: 8px;
 }
+
+#section2 {
+    line-height: 5px;
+    float: left;
+    padding-left: 18%;
+    padding-top: 5%;
+}
+
 
 /**BUS**/
 
@@ -277,7 +299,7 @@ legend {
     float: left;
 }
 
-.tdsFin{
+.tdsFin {
     height: 50px;
     width: 200px;
     vertical-align: bottom;
@@ -288,3 +310,58 @@ legend {
     color: darkblue;
 }
 
+#fontInicio {
+    text-align: center;
+    font-size: medium;
+    color: white;
+    font-weight: 800;
+    font-family: 'Lucida Sans';
+}
+
+#fontBienvenido {
+    font-size: 40px;
+    text-align: justify;
+    color: #E60000;
+    font-family: Magneto;
+}
+
+.boton {
+    margin-left: 70%;
+    padding: 1%;
+    background-color: #99B4D1;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+.botonBuscar {
+    margin-left: -6%;
+    padding: 2% 5px 2% 5px;
+    background-color: #99B4D1;
+    border-radius: 5px;
+}
+
+.boton1 {
+    margin-left: 80%;
+    padding: 5%;
+    background-color: forestgreen;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 25px;
+    color: white;
+    box-shadow:none;
+}
+
+#cancel {
+    margin-left: 50%;
+    padding: 5%;
+    background-color: #900000;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 25px;
+    color: white;
+    text-decoration:none;
+    font-family:'Lucida Sans';
+    font-size:14px;
+
+}

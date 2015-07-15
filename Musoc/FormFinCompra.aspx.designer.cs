@@ -31,6 +31,15 @@ namespace Musoc {
         protected global::System.Web.UI.HtmlControls.HtmlInputText montoTotal;
         
         /// <summary>
+        /// txtAsientos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtAsientos;
+        
+        /// <summary>
         /// btnFinComprar control.
         /// </summary>
         /// <remarks>
@@ -38,14 +47,5 @@ namespace Musoc {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnFinComprar;
-        
-        /// <summary>
-        /// btnCancelar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
     }
 }
