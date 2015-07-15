@@ -20,6 +20,7 @@ namespace Musoc
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 BindSeats();
@@ -29,7 +30,11 @@ namespace Musoc
 
         public void BindSeats()
         {
+
             ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
+            //ScriptManager.RegisterStartupScript(this, this.GetType(), "Init", "init();", true);
+            //ScriptManager.RegisterStartupScript(this, GetType(), "init", "init();", true);  
+            //ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "init", "<script>init();</script>", true);
         }
 
 

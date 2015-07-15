@@ -49,7 +49,6 @@ C:\Users\William\Source\Repos\musoc\Musoc\bin\Microsoft.ApplicationInsights.xml
 C:\Users\William\Source\Repos\musoc\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.xml
 C:\Users\William\Source\Repos\musoc\Musoc\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
 C:\Users\William\Source\Repos\musoc\Musoc\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.xml
-C:\Users\William\Source\Repos\musoc\Musoc\obj\Debug\Musoc.csprojResolveAssemblyReference.cache
 C:\Users\William\Source\Repos\musoc\Musoc\obj\Debug\Musoc.dll
 C:\Users\William\Source\Repos\musoc\Musoc\obj\Debug\Musoc.pdb
 C:\Users\Dalila\Source\Repos\musoc\Musoc\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll

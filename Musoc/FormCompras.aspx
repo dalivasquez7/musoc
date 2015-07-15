@@ -86,11 +86,9 @@
                 </div>
                 <div style="clear: both; width: 100%">
                     <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
+                    <asp:Button Text="ComprarBoletos" value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
                 </div>
             </fieldset>
-        </div>
-        <div>
-            <asp:Button Text="ComprarBoletos" value="Comprar" class="btn btn-success" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
         </div>
     </form>
 </body>

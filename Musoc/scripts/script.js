@@ -12,7 +12,7 @@
     };
 
     var chargePerSheet;
-    var init = function (reservedSeat) {
+    function init (reservedSeat) {
         var str = [], seatNo, className;
         for (i = 0; i < settings.rows; i++) {
             for (j = 0; j < settings.cols; j++) {
@@ -32,16 +32,16 @@
     };
 
     //case I: Show from starting
-    init();
+    //init();
 
    // Case II: If already booked
-    //var bookedSeats = [5, 10, 25];
+    //var bookedSeats = [7,8,5];
     //init(bookedSeats);
 
 
     $('.' + settings.seatCss).live('click', function () {
         if ($(this).hasClass(settings.selectedSeatCss)) {
-            alert('Este asiento ya est');
+            alert('Este asiento ya esta ocupado');
         }
         else {
             $(this).toggleClass(settings.selectingSeatCss);
@@ -56,9 +56,10 @@
         if (str.length > 0) {
             $('#txtMonto').val(str.length * chargePerSheet);
             $('#txtNumAsiento').val(str.join(','));
-        //alert(str.join(','));
-            //window.open("FormFinCompra.aspx");
         }
+        /*else {
+            alert("Seleccione al menos un asiento");
+        }*/
         
     }) 
     
