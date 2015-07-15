@@ -69,3 +69,4 @@ C:\Users\Dalila\Source\Repos\musoc\Musoc\bin\Microsoft.ApplicationInsights.Web.T
 C:\Users\Dalila\Source\Repos\musoc\Musoc\obj\Debug\Musoc.csprojResolveAssemblyReference.cache
 C:\Users\Dalila\Source\Repos\musoc\Musoc\obj\Debug\Musoc.dll
 C:\Users\Dalila\Source\Repos\musoc\Musoc\obj\Debug\Musoc.pdb
+C:\Users\William\Source\Repos\musoc\Musoc\obj\Debug\Musoc.csprojResolveAssemblyReference.cache

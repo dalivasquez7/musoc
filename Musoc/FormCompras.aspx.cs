@@ -17,23 +17,20 @@ namespace Musoc
         public DateTime fecha;
         public String horaViaje;
         public static int[] ocupados;
+        public String sel = " ";
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!ClientScript.IsStartupScriptRegistered("Init"))
             {
-                ocupados = new int[] { 1, 2 };
-                BindSeats();
+                BindSeats(sel);
             } 
-
 
         }
 
-        public void BindSeats()
+        public void BindSeats(String s)
         {
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "Init", "init();", true);
-
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "Init", "init([" + s + "]);", true);
         }
 
 
@@ -66,8 +63,18 @@ namespace Musoc
             
                 }
 
+                // Guarda ocupados en un String
+                for (int j = 0; j < ocupados.Length; j++) {
+                    if (j == ocupados.Length-1){
+                        sel += ocupados[j];
+                    }else{
+                        sel += ocupados[j] + ",";
+                    }
+                }
 
-        }
+                BindSeats(sel);
+
+            }
         }
 
         protected void clickAgregarHora(object sender, EventArgs e)

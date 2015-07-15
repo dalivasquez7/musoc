@@ -12,7 +12,7 @@
         selectingSeatCss: 'EligiendoAsiento'
     };
 
-   var init= function(reservedSeat) {
+    function init(reservedSeat) {
         var str = [], seatNo, className;
         for (i = 0; i < settings.rows; i++) {
             for (j = 0; j < settings.cols; j++) {
@@ -28,7 +28,6 @@
             }
         }
         $('#lugar').html(str.join(''));
-        chargePerSheet = $('#txtMonto').val();
     };
 
 
@@ -47,20 +46,16 @@
             str.push($(this).attr('title'));
         });
         if (str.length > 0) {
-            $('#txtMonto').val(str.length * chargePerSheet);
             $('#txtNumAsiento').val(str.join(','));
-            //alert(str.join(','));
-            //window.open("FormFinCompra.aspx");
+        } else {
+            alert("Seleccione al menos un asiento");
         }
 
     })
 
-
-
 </script>
 
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FormCompras.aspx.cs" Inherits="Musoc.FormCompras" %>
-
 
 <!DOCTYPE html>
 <html>
@@ -150,7 +145,7 @@
                 <div style="clear: both; width: 100%">
                     <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
                 </div>
-                <div>
+                <div style="clear: both; width: 100%">
                     <asp:Button class="boton" Text="Siguiente" value="Comprar" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
                 </div>
             </fieldset>

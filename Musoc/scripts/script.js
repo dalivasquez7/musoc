@@ -56,10 +56,9 @@
         if (str.length > 0) {
             $('#txtMonto').val(str.length * chargePerSheet);
             $('#txtNumAsiento').val(str.join(','));
-        }
-        /*else {
+        }else {
             alert("Seleccione al menos un asiento");
-        }*/
+        }
         
     }) 
     
