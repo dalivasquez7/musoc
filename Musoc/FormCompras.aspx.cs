@@ -11,6 +11,8 @@ namespace Musoc
     public partial class FormCompras : System.Web.UI.Page
     {
 
+
+
         private ControladorCompras controlador = new ControladorCompras();
         public String asientos;
         public String codigo;
