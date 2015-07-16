@@ -40,6 +40,15 @@ namespace Musoc {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtAsientos;
         
         /// <summary>
+        /// correo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correo;
+        
+        /// <summary>
         /// btnFinComprar control.
         /// </summary>
         /// <remarks>

@@ -24,7 +24,7 @@
         <div id="#section">
             <fieldset class="fieldStilo">
                 <div>
-                    <h2>Gracias por su compra. Se enviarán los boletos al correo: <label id="lblCorreo"></label>!</h2>
+                    <h2>Gracias por su compra. Se enviarán los boletos al correo: <asp:Label ID="lblCorreo" AssociatedControlID="labelCorreo" runat="server"/></h2>
                 </div>               
             </fieldset>
         </div>

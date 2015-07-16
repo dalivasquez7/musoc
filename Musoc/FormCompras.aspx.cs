@@ -21,10 +21,9 @@ namespace Musoc
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!ClientScript.IsStartupScriptRegistered("Init"))
-            {
+            if (!IsPostBack) {
                 BindSeats(sel);
-            } 
+            }
 
         }
 
@@ -55,26 +54,17 @@ namespace Musoc
 
             if (asientosOcupados.Rows.Count > 0)
             {
+                
                 ocupados = new int[asientosOcupados.Rows.Count - 1]; //pone los numeros de asientos en un array de int
+                System.Diagnostics.Debug.WriteLine("Ocupados ="+ocupados.Length);
 
                 foreach (DataRow fila in asientosOcupados.Rows)
                 {
                     ocupados[i] = int.Parse(fila[0].ToString());
-            
+                    sel += ocupados[i]+",";
                 }
-
-                // Guarda ocupados en un String
-                for (int j = 0; j < ocupados.Length; j++) {
-                    if (j == ocupados.Length-1){
-                        sel += ocupados[j];
-                    }else{
-                        sel += ocupados[j] + ",";
-                    }
-                }
-
-                BindSeats(sel);
-
             }
+            BindSeats(sel);
         }
 
         protected void clickAgregarHora(object sender, EventArgs e)

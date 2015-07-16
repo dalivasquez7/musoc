@@ -42,7 +42,7 @@ namespace Musoc
 
                 controlador.finalizar(asiento[i], fech, "ocupado", codigo, hora);
             }
-
+            FormFin.correo = correo.Value;
             Response.Redirect("~/FormFin.aspx");
         }
 

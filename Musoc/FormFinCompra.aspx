@@ -63,7 +63,7 @@
                     <tr>
                         <td class="tdsFin">Email:</td>
                         <td class="tdsFin">
-                            <input type="email" name="email" required="required" placeholder="ejemplo@corre.com" /></td>
+                            <input id="correo" runat="server" type="email" name="email" required="required" placeholder="ejemplo@corre.com" /></td>
                     </tr>
                 </table>
                 <table>
