@@ -88,6 +88,8 @@
     <Content Include="Inicio.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
+    <None Include="Properties\PublishProfiles\musoccr.pubxml" />
+    <None Include="Properties\PublishProfiles\musoconline.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
