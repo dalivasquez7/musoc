@@ -112,14 +112,16 @@
                         <td class="tds">
                             <input id="diaSeleccionado" type="date" runat="server" autopostback="true" />
                         </td>
-                        <td id="tdBoton"></td>
-                        <td class="tds">
-                            <asp:Button class="botonBuscar" Text="Horas Disponibles" ID="btnFechas" runat="server" OnClick="clickAgregarHora" /></td>
-                    </tr>
+
+                     <td id="tds">   <asp:Button class="botonBuscar" Text="Horas Disponibles" ID="btnFechas" runat="server" OnClick="clickAgregarHora" />
+                    </td>
+                         </tr>
                     <tr>
                         <td class="tds">Hora:</td>
                         <td class="tds">
-                            <asp:DropDownList ID="listHora" runat="server" AutoPostBack="true" OnSelectedIndexChanged="clickMostrarAsientos"></asp:DropDownList>
+                            <asp:DropDownList ID="listHora" runat="server" AutoPostBack="true" OnSelectedIndexChanged="clickMostrarAsientos">
+                                <asp:ListItem Text="Seleccione una fecha" Value="0" />
+                            </asp:DropDownList>
                         </td>
                     </tr>
                 </table>
@@ -146,7 +148,7 @@
                     <asp:TextBox ID="txtNumAsiento" runat="server" hidden="true"></asp:TextBox>
                 </div>
                 <div style="clear: both; width: 100%">
-                    <asp:Button class="boton" Text="Siguiente" value="Comprar" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
+                    <asp:Button class="botonBuscar2" Text=" Siguiente  >>" value="Comprar" ID="btnComprar" runat="server" OnClick="BotonComprar_click" />
                 </div>
             </fieldset>
         </div>

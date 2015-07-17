@@ -14,7 +14,8 @@ namespace Musoc
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblCorreo.Text = correo;
+            labelCorreo.Text = correo;
+
         }
     }
 }
